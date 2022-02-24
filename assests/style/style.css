@@ -91,14 +91,27 @@ section {
     display: flex;
 }
 
-.files-about {
-    position: fixed;
-    cursor: pointer;
-    background: black;
+.files-about  {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    color: #15f4ee;
+    font-weight: 400;
+    border: 5px solid #15f4ee;
     text-transform: uppercase;
-    transform: translateX(50%);
-    transition: transform .5s ease-in-out;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1.5s;
+    margin-bottom: 10px;
 }
+
+
+.files-about:hover {
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
 /*Social-links*/
 .social-links a {
     font-size: 18px;
@@ -163,7 +176,7 @@ a {
 }
 
 button {
-    color: white;
+    color: black;
     padding: .75em 2em;
     font-weight: bold;
     margin-left: 20px;
@@ -171,7 +184,11 @@ button {
     box-sizing: border-box;
     border-radius: 30px;
     cursor: pointer;
-    background-color: black;
+    background-color: white;
+}
+
+header button span {
+    display: none;
 }
 
 a span:hover{
@@ -351,8 +368,55 @@ margin-bottom: 0;
 }
 
 
-  /*END*/
+/*END*/
 
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+.facts {
+  padding-bottom: 30px;
+}
+.facts .count-box {
+  padding: 30px;
+  width: 100%;
+}
+.facts .count-box i {
+  display: block;
+  font-size: 44px;
+  color: #149ddd;
+  float: left;
+  line-height: 0;
+}
+.facts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #050d18;
+  margin-left: 60px;
+}
+.facts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #122f57;
+}
+.facts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #122f57;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+.facts .count-box a:hover {
+  color: #1f5297;
+}
+
+
+/*MEDIA QUERRY*/
 
 @media only screen and (min-width: 680px) {
 
@@ -377,6 +441,7 @@ margin-bottom: 0;
         height: auto;
         background: none;
     }
+
 
     svg.close {
         display: none;
@@ -523,6 +588,11 @@ margin-bottom: 0;
 }
 .dark-mode .about .content ol strong {
     margin-right: 10px;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: #000000;
     color: white;
 }
 
