@@ -91,26 +91,6 @@ section {
     display: flex;
 }
 
-.files-about  {
-    background-color: white;
-    position: relative;
-    text-align: center;
-    color: #15f4ee;
-    font-weight: 400;
-    border: 5px solid #15f4ee;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: 1.5s;
-    margin-bottom: 10px;
-}
-
-
-.files-about:hover {
-    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
-}
 
 /*Social-links*/
 .social-links a {
@@ -292,6 +272,7 @@ section.hero {
 }
 
 .down-arrow {
+    margin-top: 20px;
     stroke: white;
     position: absolute;
     bottom: 15em;
