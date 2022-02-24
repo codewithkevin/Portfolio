@@ -296,40 +296,59 @@ path {
     font-weight: 700;
     font-size: 26px;
     color: #173b6c;
-  }
-  .about .content ol {
-    list-style: none;
-    padding: 0;
-  }
-  .about .content ol li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
-  .about .content ol li span {
-    color: black;
-  }
-  .about .content ol strong {
-    margin-right: 10px;
-    color: #010103;
-  }
-  .about .content ol i {
-    font-size: 16px;
-    margin-right: 5px;
-    color: #149ddd;
-    line-height: 0;
-  }
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
+}
 
-  .about .about-button {
-      position: relative;
-      text-align: center;
-      color: #15f4ee;
-      font-weight: 400;
-      border: 5px solid #;
-  }
+.about .content ol {
+list-style: none;
+padding: 0;
+}
+
+.about .content ol li {
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+}
+
+  .about .content ol li span {
+    color: rgb(0, 0, 0);
+}
+
+.about .content ol strong {
+margin-right: 10px;
+color: #000000;
+}
+
+.about .content ol i {
+font-size: 16px;
+margin-right: 5px;
+color: dodgerblue;
+line-height: 0;
+}
+
+.about .content p:last-child {
+margin-bottom: 0;
+}
+
+.about .about-button {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    color: #15f4ee;
+    font-weight: 400;
+    border: 5px solid #15f4ee;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1.5s;
+    margin-bottom: 10px;
+}
+
+
+.about .about-button:hover {
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
 
 
   /*END*/
