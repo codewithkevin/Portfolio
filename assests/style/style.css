@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*BODY*/
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* --------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+:root{
+    /* ===== Colors ===== */
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+/*END */
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*END SEction */
+
+
+/**/
+.files {
+    display: flex;
+}
+
+.files-about {
+    position: fixed;
+    cursor: pointer;
+    background: black;
+    text-transform: uppercase;
+    transform: translateX(50%);
+    transition: transform .5s ease-in-out;
+}
+/*Social-links*/
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: dodgerblue;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/*End list */
+
+/*NAVbar */
+
+.logo {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+    font-style: oblique;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}    
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}    
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+a {
+    padding: .75em 2em;
+    font-weight: bolder;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    padding: .75em 2em;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: black;
+}
+
+a span:hover{
+    color: dodgerblue;
+}
+
+a:hover{
+    color: cadetblue;
+    padding-bottom: 4px;
+    letter-spacing: 0px;
+    border-bottom: 3px solid #149ddd;
+}
+
+.close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+    background-color: #0b0a14;
+}
+#moon-icon {
+    display: none;
+}
+
+.mode .sun-moon{
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg {
+    width: 2.3em;
+    margin-top: -.1em;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+path {
+    fill: white;
+}
+
+/*End*/
+
+/*Hero Section*****/
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/assests/images/IMG_2708.JPG");
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    animation: introLoad 2s forwards;
+    overflow: hidden;
+}
+
+section.hero {
+    color: white;
+    height: 90vh;
+    animation: moveDown 1s ease-in forwards;
+    opacity: 0;
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+  margin: 100px 0 0px 30px;
+}
+#hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgb(0, 0, 0);
+}
+#hero p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+#hero p span {
+  color: cadetblue;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+.down-arrow {
+    stroke: white;
+    position: absolute;
+    bottom: 15em;
+    font-weight: bolder;
+    width: 1em;
+    animation: moveArrow 1s alternate-reverse infinite;
+}
+
+path {
+    fill: white;
+}
+
+/**END******/
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+  .about .content ol {
+    list-style: none;
+    padding: 0;
+  }
+  .about .content ol li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .about .content ol li span {
+    color: black;
+  }
+  .about .content ol strong {
+    margin-right: 10px;
+    color: #010103;
+  }
+  .about .content ol i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  /*END*/
+
+
+@media only screen and (min-width: 680px) {
+
+    body {
+        margin: 1.5em 5em;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+@media only screen and (min-width: 920px) {
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    svg.close {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+    }
+
+    a {
+        color: white;
+        padding: .5em 1.0em;
+        font-size: .9rem;
+    }
+
+    a:hover {
+        background: none;
+        text-decoration: none;
+        color: red;
+    }
+
+
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
+
+    .logo {
+        color: black;
+    }
+    span {
+        color: white;
+    }
+    
+
+    section.hero {
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 8em;
+    }
+    .subhead {
+        margin-bottom: 3em;
+    }
+
+    svg.down-arrow {
+        stroke: black;
+        position: unset;
+        margin-left: 50px;
+
+    }
+    path {
+        fill: black;
+    }
+           
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    .feature {
+        gap: 0;
+    }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-30px)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+@keyframes moveDown {
+    from {
+        transform: translateY(-100px)
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/**Dark MODE CONTENT **/
+
+.dark-mode {
+    /* background: #0b0a14; */
+    background-color: black;
+}
+
+.dark-mode #moon-icon {
+    display: inline;
+}
+
+.dark-mode #soon-icon {
+    display: none;
+}
+
+.dark-mode #hero h1 {
+    color: dodgerblue;
+}
+.dark-mode #hero p {
+    color: white;
+}
+.dark-mode h1 {
+    color: white;
+}
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .down-arrow {
+    stroke: white;
+}
+
+.dark-mode a:hover {
+    color: cadetblue;
+}
+
+/**END CONTENT **/
