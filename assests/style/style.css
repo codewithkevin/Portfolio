@@ -222,7 +222,7 @@ path {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/assests/images/IMG_2708.JPG");
+    background-image: url("/assests/images/bg.gif");
     background-size: cover;
     background-position-x: 20%;
     background-position-y: 20%;
@@ -322,6 +322,16 @@ path {
   .about .content p:last-child {
     margin-bottom: 0;
   }
+
+  .about .about-button {
+      position: relative;
+      text-align: center;
+      color: #15f4ee;
+      font-weight: 400;
+      border: 5px solid #;
+  }
+
+
   /*END*/
 
 
@@ -483,6 +493,18 @@ path {
 
 .dark-mode a:hover {
     color: cadetblue;
+}
+
+.dark-mode .about .about-button{
+    background-color: #010103;
+}
+
+.dark-mode .about .content ol li span {
+    color: white;
+}
+.dark-mode .about .content ol strong {
+    margin-right: 10px;
+    color: white;
 }
 
 /**END CONTENT **/
