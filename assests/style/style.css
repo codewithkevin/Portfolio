@@ -612,6 +612,12 @@ section .card{
     ul {
         display: flex;
         margin: 0;
+        display: inline;
+        float: right;
+    }
+
+    ul span {
+        display: none;
     }
 
     a {
