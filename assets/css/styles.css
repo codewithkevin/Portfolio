@@ -125,15 +125,27 @@ body.dark-theme{
   color: white;
 }
 
+.dark-theme .home .home__data p, h1{
+  color: white;
+}
+
+@media (max-width: 768px){
+  .dark-theme .home__container .home__data h1 {
+    color: #FFF;
+  }
+
+}
+
 .dark-theme .about__data button a{
   color: white;
 }
 
 .dark-theme .about__container button:hover {
-    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
 }
+
 /*========== Button Dark/Light ==========*/
 .change-theme{
   color: var(--title-color);
@@ -329,6 +341,25 @@ the website, in dark theme
   border-radius: 90px;
 }
 
+.home__container .home__data{
+  cursor: default;
+}
+
+.home__container .home__data p {
+  font-weight: bolder;
+  color: white;
+}
+
+.home__container .home__data h1 {
+  font-weight: bolder;
+  cursor: default;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 50px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
 .home__title{
   font-size: var(--big-font-size);
   line-height: 140%;
@@ -349,9 +380,9 @@ the website, in dark theme
 }
 
 .home__social-follow{
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
   font-size: var(--smaller-font-size);
-  color: var(--first-color);
+  color: dodgerblue;
   position: relative;
   transform: rotate(90deg);
 }
@@ -361,7 +392,7 @@ the website, in dark theme
   position: absolute;
   width: 1rem;
   height: 2px;
-  background-color: var(--first-color);
+  background-color: dodgerblue;
   right: -45%;
   top: 50%;
 }
@@ -380,12 +411,45 @@ the website, in dark theme
 
 .home__social-link{
   font-size: 1rem;
-  color: var(--first-color);
+  color: dodgerblue;
   transition: .3s;
+  font-weight: 900px;
+  font-size: 20px;
 }
 
 .home__social-link:hover{
   transform: translateX(.25rem);
+  color: darkcyan;
+  font-size: 40px;
+}
+
+.home__container .home__data p{
+  color: black;
+}
+
+.home__container .home__data h1 {
+  color: black;
+}
+
+@media (max-width: 768px){
+  .home .home__img {
+    display: none;
+  }
+  .home {
+    background-image: url("/assets/img/images/bg.gif");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .home .home__container{
+    margin-top: 15em;
+  }
+
+  .home .home__data p, h1{
+    color: white;
+  }
+
 }
 
 /*=============== BUTTONS ===============*/
@@ -479,6 +543,10 @@ the website, in dark theme
   margin-bottom: 2rem;
 }
 
+.section-nav {
+  margin-top: 40px;
+}
+
 .about__data button a {
   color: black;
   font-size: 1.5rem;
@@ -504,6 +572,67 @@ the website, in dark theme
     }
 
 }
+
+/*============ Fact ===========*/
+
+.fact .section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fact .container .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  transition:all 1s ease-in-out;
+}
+
+.fact .container .row .col-lg-6{
+  margin-right: 90px;
+}
+
+.fact .container .row .col-lg-6 ul li i{
+  color: dodgerblue;
+  font-weight: 900px;
+  font-size: 1.2rem;
+}
+
+.fact .container .row .col-lg-6{
+  margin-right: 90px;
+}
+
+.fact .container .row .col-lg-6 strong{
+  color: dodgerblue;
+  font-size: 20px;
+}
+
+.fact .container .row .col-lg-6 span{
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px){
+  .fact .section-title{
+    margin-top: 70px;
+  }
+  .fact {
+    margin-bottom: 70px;
+  }
+  .fact .container .row{
+    display: inline-block;
+    transition: none;
+  }
+  .fact .container .row .col-lg-6{
+    justify-content: left;
+    display: contents;
+  }
+  
+}
+
+
+
+/*========= End =============*/
 
 /*=============== SKILLS ===============*/
 .steps__bg{
@@ -551,68 +680,135 @@ the website, in dark theme
   transform: translateY(-.25rem);
 }
 
-/*=============== PRODUCTS ===============*/
-.product__description{
-  text-align: center;
-}
+/*=============== Testimony ===============*/
 
-.product__container{
-  padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
-}
+section .test{
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	background: #070c0d;
+	overflow: hidden;
 
-.product__card{
-  display: grid;
-  position: relative;
 }
-
-.product__img{
-  position: relative;
-  width: 120px;
-  justify-self: center;
-  margin-bottom: var(--mb-0-75);
-  transition: .3s;
+section .test:before{
+	position: absolute;
+	content: '';
+	width: 2000px;
+	height: 100%;
+	bottom: -70%;
+	border-radius: 50%;
+	background: #3b7cf5;
 }
-
-.product__title,
-.product__price{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+section .test .heading{
+	display: inline-block;
+	position: relative;
+	color: #3b7cf5;
+	font-size: 4vw;
+	padding: 60px;
+	width: 100%;
+	text-align: center;
+	font-weight: 800;
 }
-
-.product__title{
-  margin-bottom: .25rem;
+section .test .heading:before{
+	position: absolute;
+	content: '';
+	width: 15%;
+	height: 7px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 25%;
+	background: #393939;
 }
-
-.product__button{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .25rem;
-  border-radius: .35rem;
-  font-size: 1.15rem;
+section .test .heading b{
+	color: #fff;
 }
-
-.product__button:hover{
-  background-color: var(--first-color-alt);
+.test .wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
 }
-
-.product__circle{
-  width: 90px;
-  height: 90px;
-  background-color: var(--first-color-lighten);
-  border-radius: 50%;
-  position: absolute;
-  top: 18%;
-  left: 5%;
+.wrapper .container{
+	position: relative;
+	width: 350px;
+	color: #fff;
+	background: #222;
+	margin: 40px 10px;
+	padding: 30px 20px;
+	border-radius: 3px;
+	transition: 0.3s ease;
 }
-
-.product__card:hover .product__img{
-  transform: translateY(-.5rem);
+.wrapper .container .profile{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -10%;
+	width: 100%;
+	display: block;
+}
+.wrapper .container .profile .imgBox{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border: 8px solid #070c0d;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.wrapper .container .profile .imgBox img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: 0.3s ease;
+}
+.wrapper .container .profile .imgBox:hover img{
+	filter: saturate(140%);
+	transform: scale(0.95);
+}
+.wrapper .container .profile h2{
+	padding: 5px 0;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.wrapper .container p{
+	margin-top: 50px;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 15px;
+	opacity: 0.8;
+}
+.wrapper .container .left{
+	font-size: 30px;
+	display: block;
+	text-align: left;
+	color: #3b7cf5;	
+}
+.wrapper .container .right{
+	font-size: 30px;
+	display: block;
+	text-align: right;
+	color: #3b7cf5;	
+}
+.wrapper .container .social{
+	width: 100%;
+}
+.wrapper .container .social i{
+	font-size: 1.2em;
+	color: #fff;
+	padding: 8px;
+	background: rgba(255,255,255,0.08);
+	border-radius: 4px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+.wrapper .container .social i:hover{
+	background: #3b7cf5;	
 }
 
 /*=============== QUESTIONS ===============*/
