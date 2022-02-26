@@ -58,13 +58,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: fit-content;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+  overflow-x: hidden;
+  
 }
 
 #header .profile .social-links a {
@@ -81,6 +83,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
   transition: 0.3s;
 }
+
+
 #header .profile .social-links a:hover {
   background: #149ddd;
   color: #fff;
@@ -88,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 40px;
 }
 
 @media (max-width: 1199px) {
@@ -115,7 +119,14 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
+  margin-top: 30px;
 }
+
+.nav-menu ul li span {
+  display: none;
+}
+
+
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
@@ -138,6 +149,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #149ddd;
 }
 
+.nav-menu .mode #soon-icon {
+  display: none;
+}
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -150,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none !important;
   background-color: #149ddd;
   color: #fff;
-  width: 40px;
+  width: 50px;
   height: 40px;
   display: inline-flex;
   align-items: center;
@@ -171,14 +186,25 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+}
+
+#hero .bg {
+  background: url('/assets/img/hero-bg.jpg');
+  background-position: center;
   background-size: cover;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 50%;
+}
+
+#hero .container {
+  padding: 130px;
 }
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -191,21 +217,23 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   min-width: 300px;
 }
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: black;
 }
+
 #hero p {
-  color: #fff;
+  color: black;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 #hero p span {
-  color: #fff;
+  color: black;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -267,6 +295,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  right: 900px;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -927,3 +958,60 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/**Dark MODE CONTENT **/
+
+.dark-mode {
+  /* background: #0b0a14; */
+  background-color: black;
+}
+
+.dark-mode .mode #soon-icon {
+  display: inline;
+}
+
+.dark-mode #moon-icon {
+  display: none;
+}
+
+.dark-mode #hero h1 {
+  color: dodgerblue;
+}
+.dark-mode #hero p {
+  color: white;
+}
+.dark-mode h1 {
+  color: white;
+}
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode .down-arrow {
+  stroke: white;
+}
+
+.dark-mode a:hover {
+  color: cadetblue;
+}
+
+.dark-mode .about .about-button{
+  background-color: #010103;
+}
+
+.dark-mode .about .content ol li span {
+  color: white;
+}
+.dark-mode .about .content ol strong {
+  margin-right: 10px;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #000000;
+  color: white;
+}
+
+/**END CONTENT **/
+
+

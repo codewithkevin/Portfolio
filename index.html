@@ -24,7 +24,6 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -36,9 +35,9 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="d-flex flex-column">
+    <div class="d-flex">
 
-      <div class="profile">
+      <!-- <div class="profile">
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -46,7 +45,7 @@
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-      </div>
+      </div> -->
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -56,6 +55,13 @@
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        
+          <l class="mode">
+            <a onclick="changemode()">
+                <i id="moon-icon" class='bx bx-moon icon moon'></i>
+                <i id="soon-icon" class='bx bx-sun icon sun'></i>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -64,12 +70,27 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Alex Smith</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-    </div>
-  </section><!-- End Hero -->
+  <section id="hero" class="flex-column justify-content-center align-items-center">
+    <div class="container">
+      <div class="bg"></div>
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Alex Smith</h1>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      </div>
+
+      <div class="profile">
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      
+    </div>  
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
