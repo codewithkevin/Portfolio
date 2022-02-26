@@ -120,6 +120,20 @@ body.dark-theme{
   --container-color: hsl(var(--hue), 8%, 16%);
 }
 
+.dark-theme .about__data button{
+  background: black;
+  color: white;
+}
+
+.dark-theme .about__data button a{
+  color: white;
+}
+
+.dark-theme .about__container button:hover {
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
 /*========== Button Dark/Light ==========*/
 .change-theme{
   color: var(--title-color);
@@ -200,6 +214,7 @@ the website, in dark theme
   justify-content: space-between;
   align-items: center;
 }
+
 
 .nav__logo,
 .nav__toggle,
@@ -311,6 +326,7 @@ the website, in dark theme
 .home__img{
   width: 200px;
   justify-self: center;
+  border-radius: 90px;
 }
 
 .home__title{
@@ -415,6 +431,10 @@ the website, in dark theme
   row-gap: 2rem;
 }
 
+.about {
+  height: 100vh;
+}
+
 .about__img{
   width: 280px;
   justify-self: center;
@@ -446,7 +466,46 @@ the website, in dark theme
   margin-top: .15rem;
 }
 
-/*=============== STEPS ===============*/
+.about__data button{
+  justify-content: space-evenly;
+  padding: 10px 10px 5px 10px;
+  box-sizing: border-box;
+  box-shadow: 9rem;
+  cursor: default;
+  background-origin: border-box;
+  border: px solid rgba(38, 0, 255, 0.3) ;
+  transition:all 1s ease-in-out;
+  box-shadow: 17px 17px 17px -2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+.about__data button a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.about__data button::before{
+  background-color: dodgerblue;
+}
+
+.about__data a {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px){
+    .about__data{
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .section-nav {
+      display: none;
+    }
+
+}
+
+/*=============== SKILLS ===============*/
 .steps__bg{
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
