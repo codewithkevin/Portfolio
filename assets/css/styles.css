@@ -350,6 +350,12 @@ the website, in dark theme
   top: 50%;
 }
 
+.home .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
 .home__social-links{
   display: inline-flex;
   flex-direction: column;
