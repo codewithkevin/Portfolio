@@ -356,6 +356,7 @@ the website, in dark theme
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 50px;
+  color: #fff;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -620,12 +621,13 @@ the website, in dark theme
     margin-bottom: 70px;
   }
   .fact .container .row{
-    display: inline-block;
+    display: inline;
     transition: none;
   }
   .fact .container .row .col-lg-6{
     justify-content: left;
     display: contents;
+
   }
   
 }
@@ -636,7 +638,7 @@ the website, in dark theme
 
 /*=============== SKILLS ===============*/
 .steps__bg{
-  background-color: var(--first-color);
+  background-color: dodgerblue;
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
 }
@@ -659,7 +661,7 @@ the website, in dark theme
 .steps__card-number{
   display: inline-block;
   background-color: var(--first-color-alt);
-  color: #FFF;
+  color: #fff;
   padding: .5rem .75rem;
   border-radius: .25rem;
   font-size: var(--h2-font-size);
@@ -680,6 +682,13 @@ the website, in dark theme
   transform: translateY(-.25rem);
 }
 
+@media (max-width: 768px){
+  .steps__container{
+    text-align: center;
+  }
+  
+}
+
 /*=============== Testimony ===============*/
 
 section .test{
@@ -690,8 +699,17 @@ section .test{
 	background: #070c0d;
 	overflow: hidden;
   height: 100vh;
-
 }
+
+.test .heading {
+  justify-content: center;
+  text-align: center;
+  margin-top: 90px;
+  text-decoration: underline;
+  margin-bottom: -40px;
+}
+
+
 section .test:before{
 	position: absolute;
 	content: '';
@@ -813,6 +831,18 @@ section .test .heading b{
 }
 .test .wrapper .container .social i:hover{
 	background: #3b7cf5;	
+}
+
+
+@media (max-width: 768px){
+  .test .heading {
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px;
+    text-decoration: underline;
+  }
+
+
 }
 
 /*=============== QUESTIONS ===============*/
