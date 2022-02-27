@@ -684,10 +684,12 @@ the website, in dark theme
 
 section .test{
 	position: relative;
+  margin-top: 80px;
 	min-height: 100vh;
 	width: 100%;
 	background: #070c0d;
 	overflow: hidden;
+  height: 100vh;
 
 }
 section .test:before{
@@ -725,11 +727,13 @@ section .test .heading b{
 .test .wrapper{
 	width: 100%;
 	display: flex;
+  margin-top: 90px;
+  margin-bottom: 90px;
 	justify-content: center;
 	flex-wrap: wrap;
 	text-align: center;
 }
-.wrapper .container{
+.test .wrapper .container{
 	position: relative;
 	width: 350px;
 	color: #fff;
@@ -739,7 +743,7 @@ section .test .heading b{
 	border-radius: 3px;
 	transition: 0.3s ease;
 }
-.wrapper .container .profile{
+.test .wrapper .container .profile{
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -747,7 +751,7 @@ section .test .heading b{
 	width: 100%;
 	display: block;
 }
-.wrapper .container .profile .imgBox{
+.test .wrapper .container .profile .imgBox{
 	position: relative;
 	height: 100px;
 	width: 100px;
@@ -756,7 +760,7 @@ section .test .heading b{
 	border-radius: 50%;
 	overflow: hidden;
 }
-.wrapper .container .profile .imgBox img{
+.test .wrapper .container .profile .imgBox img{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -766,18 +770,18 @@ section .test .heading b{
 	object-fit: cover;
 	transition: 0.3s ease;
 }
-.wrapper .container .profile .imgBox:hover img{
+.test .wrapper .container .profile .imgBox:hover img{
 	filter: saturate(140%);
 	transform: scale(0.95);
 }
-.wrapper .container .profile h2{
+.test .wrapper .container .profile h2{
 	padding: 5px 0;
 	text-transform: capitalize;
 	color: #fff;
 	letter-spacing: 1px;
 	text-align: center;
 }
-.wrapper .container p{
+.test .wrapper .container p{
 	margin-top: 50px;
 	color: #fff;
 	padding: 0 8px;
@@ -790,16 +794,16 @@ section .test .heading b{
 	text-align: left;
 	color: #3b7cf5;	
 }
-.wrapper .container .right{
+.test .wrapper .container .right{
 	font-size: 30px;
 	display: block;
 	text-align: right;
 	color: #3b7cf5;	
 }
-.wrapper .container .social{
+.test .wrapper .container .social{
 	width: 100%;
 }
-.wrapper .container .social i{
+.test .wrapper .container .social i{
 	font-size: 1.2em;
 	color: #fff;
 	padding: 8px;
@@ -807,7 +811,7 @@ section .test .heading b{
 	border-radius: 4px;
 	box-shadow: 0 4px 4px rgba(0,0,0,0.5);
 }
-.wrapper .container .social i:hover{
+.test .wrapper .container .social i:hover{
 	background: #3b7cf5;	
 }
 
