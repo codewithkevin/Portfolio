@@ -751,7 +751,7 @@ section .test .heading b{
 	flex-wrap: wrap;
 	text-align: center;
 }
-.test .wrapper .container{
+.wrapper .container{
 	position: relative;
 	width: 350px;
 	color: #fff;
@@ -761,7 +761,7 @@ section .test .heading b{
 	border-radius: 3px;
 	transition: 0.3s ease;
 }
-.test .wrapper .container .profile{
+.wrapper .container .profile{
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
