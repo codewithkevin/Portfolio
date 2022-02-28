@@ -146,6 +146,10 @@ body.dark-theme{
   text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
 }
 
+.dark-theme .fact .container .row .col-lg-6 span{
+  color: white;
+}
+
 /*========== Button Dark/Light ==========*/
 .change-theme{
   color: var(--title-color);
@@ -383,10 +387,22 @@ the website, in dark theme
 .home__social-follow{
   font-weight: var(--font-semi-bold);
   font-size: var(--smaller-font-size);
-  color: dodgerblue;
+  color: black;
   position: relative;
   transform: rotate(90deg);
 }
+
+/*Dark*/
+
+.dark-theme .home__social-follow{
+  color: white;
+}
+
+.dark-theme .github{
+  color: white;
+}
+
+/*End*/
 
 .home__social-follow::after{
   content: '';
@@ -412,11 +428,28 @@ the website, in dark theme
 
 .home__social-link{
   font-size: 1rem;
-  color: dodgerblue;
+  color: rgb(0, 0, 0);
   transition: .3s;
   font-weight: 900px;
   font-size: 20px;
 }
+
+/*Media Icons Color*/
+.youtube {
+  color: red;
+}
+
+.instagram {
+  color: brown;
+  font-weight: 900px;
+}
+
+.twitter {
+  color: blue;
+}
+
+/*End */
+
 
 .home__social-link:hover{
   transform: translateX(.25rem);
@@ -531,6 +564,25 @@ the website, in dark theme
   margin-top: .15rem;
 }
 
+.about__data h2{
+  text-decoration: overline;
+  text-decoration-color: cadetblue;
+  cursor: pointer;
+}
+
+.about__data h2:hover{
+  font-size: 90px;
+  border: px solid rgba(38, 0, 255, 0.3) ;
+  transition:all 1s ease-in-out;
+}
+.about__data p {
+  cursor: pointer;
+}
+
+.about__data p:hover{
+  font-size: 20px;
+}
+
 .about__data button{
   justify-content: space-evenly;
   padding: 10px 10px 5px 10px;
@@ -581,6 +633,17 @@ the website, in dark theme
     margin-bottom: 60px;
 }
 
+.fact .section-title h2{
+  transition: 0.3s;
+  padding-bottom: 10px;
+}
+
+.fact .section-title h3 {
+  text-decoration: underline;
+  text-decoration-color: dodgerblue;
+  margin-bottom: -40px;
+}
+
 .fact .container .row{
   display: flex;
   justify-content: center;
@@ -596,7 +659,7 @@ the website, in dark theme
 .fact .container .row .col-lg-6 ul li i{
   color: dodgerblue;
   font-weight: 900px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .fact .container .row .col-lg-6{
@@ -610,6 +673,7 @@ the website, in dark theme
 
 .fact .container .row .col-lg-6 span{
   font-weight: bold;
+  color: black;
 }
 
 
