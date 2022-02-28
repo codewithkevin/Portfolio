@@ -1084,6 +1084,19 @@ section .test .heading b{
   font-size: 40px;
 }
 
+.footer__container button{
+  justify-content: space-evenly;
+  padding: 10px 10px 5px 10px;
+  box-sizing: border-box;
+  border-radius: 200px;
+  box-shadow: 9rem;
+  cursor: default;
+  background-origin: border-box;
+  border: px solid rgba(38, 0, 255, 0.3) ;
+  transition:all 1s ease-in-out;
+  box-shadow: 17px 17px 17px -2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
 
 
 /*=============== SCROLL UP ===============*/
@@ -1169,9 +1182,6 @@ section .test .heading b{
     column-gap: 5rem;
   }
 
-  .footer__subscribe{
-    width: 400px;
-  }
 }
 
 @media screen and (min-width: 767px){
@@ -1304,15 +1314,6 @@ section .test .heading b{
     padding: 0 3.5rem 2.25rem 2.75rem;
   }
 
-  .footer__logo{
-    font-size: var(--h3-font-size);
-  }
-  .footer__container{
-    grid-template-columns: 1fr .5fr .5fr .5fr;
-  }
-  .footer__copy{
-    margin: 7rem 0 2rem;
-  }
 }
 
 @media screen and (min-width: 1200px){
