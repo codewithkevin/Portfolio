@@ -229,6 +229,7 @@ the website, in dark theme
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 
@@ -384,6 +385,7 @@ the website, in dark theme
   row-gap: 3.5rem;
 }
 
+
 .home__social-follow{
   font-weight: var(--font-semi-bold);
   font-size: var(--smaller-font-size);
@@ -445,7 +447,7 @@ the website, in dark theme
 }
 
 .twitter {
-  color: blue;
+  color: green;
 }
 
 /*End */
@@ -771,6 +773,8 @@ section .test{
   margin-top: 90px;
   text-decoration: underline;
   margin-bottom: -40px;
+  font-size: larger;
+  font-weight: 9000px;
 }
 
 
@@ -914,7 +918,7 @@ section .test .heading b{
 
 }
 
-/*=============== QUESTIONS ===============*/
+/* =============== QUESTIONS ===============
 .questions{
   background-color: var(--first-color-lighten);
 }
@@ -976,7 +980,7 @@ section .test .heading b{
 }
 
 /*Rotate icon, change color of titles and background*/
-.accordion-open .questions__header,
+/* .accordion-open .questions__header,
 .accordion-open .questions__content{
   background-color: var(--first-color);
 }
@@ -988,24 +992,21 @@ section .test .heading b{
 }
 
 .accordion-open .questions__icon{
-  transform: rotate(45deg);
-}
+  transform: rotate(45deg); */
+
 
 /*=============== CONTACT ===============*/
 .contact__container{
-  row-gap: 3.5rem;
-}
-
-.contact__container .contact__data button{
-  margin-right: 40px;
-  width: 200px;
-  min-height: 10rem;
-  cursor: default;
+  row-gap: 1.5rem;
 }
 
 .contact__data{
   display: grid;
   row-gap: 2rem;
+}
+
+.contact__data h3{
+  margin-bottom: -10px;
 }
 
 
@@ -1014,9 +1015,6 @@ section .test .heading b{
     display: inline;
   }
 
-  .contact h2 {
-    text-align: center;
-  }
 }
 
 .contact__subtitle{
@@ -1027,7 +1025,7 @@ section .test .heading b{
 }
 
 .contact__description{
-  display: block;
+  display: flex;
   align-items: center;
   column-gap: .5rem;
   color: var(--title-color);

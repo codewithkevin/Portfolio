@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithkevin/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Kevin Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithkevin/Portfolio/issues"
+  },
+  "homepage": "https://github.com/codewithkevin/Portfolio#readme"
+}
