@@ -129,9 +129,13 @@ body.dark-theme{
   color: white;
 }
 
+.dark-theme .footer_section{
+  background-color: #070c0d;
+}
+
 @media (max-width: 768px){
   .dark-theme .home__container .home__data h1 {
-    color: #FFF;
+    color: white;
   }
 
 }
@@ -361,10 +365,14 @@ the website, in dark theme
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 50px;
-  color: #fff;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+@media (max-width: 768px){
+  .home__container .home__data .name{
+    color: white;
+  }
+}
 
 .home__title{
   font-size: var(--big-font-size);
@@ -918,81 +926,6 @@ section .test .heading b{
 
 }
 
-/* =============== QUESTIONS ===============
-.questions{
-  background-color: var(--first-color-lighten);
-}
-
-.questions__container{
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-}
-
-.questions__group{
-  display: grid;
-  row-gap: 1.5rem;
-}
-
-.questions__item{
-  background-color: var(--container-color);
-  border-radius: .25rem;
-}
-
-.questions__item-title{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
-}
-
-.questions__icon{
-  font-size: 1.25rem;
-  color: var(--title-color);
-}
-
-.questions__description{
-  font-size: var(--smaller-font-size);
-  padding: 0 1.25rem 1.25rem 2.5rem;
-}
-
-.questions__header{
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-  padding: .75rem .5rem;
-  cursor: pointer;
-}
-
-.questions__content{
-  overflow: hidden;
-  height: 0;
-}
-
-.questions__item,
-.questions__header,
-.questions__item-title,
-.questions__icon,
-.questions__description,
-.questions__content{
-  transition: .3s;
-}
-
-.questions__item:hover{
-  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
-}
-
-/*Rotate icon, change color of titles and background*/
-/* .accordion-open .questions__header,
-.accordion-open .questions__content{
-  background-color: var(--first-color);
-}
-
-.accordion-open .questions__item-title,
-.accordion-open .questions__description,
-.accordion-open .questions__icon{
-  color: #FFF;
-}
-
-.accordion-open .questions__icon{
-  transform: rotate(45deg); */
 
 
 /*=============== CONTACT ===============*/
@@ -1032,13 +965,14 @@ section .test .heading b{
   font-weight: var(--font-medium);
 }
 
-.contact__icon{
-  font-size: 1.25rem;
-}
+@media (max-width: 768px){
+  .contact__description{
+    margin-bottom: 20px;
+  }
 
-.contact__information a {
-  color: dodgerblue;
-  cursor: pointer;
+  .contact__description img{
+    margin-top: 10px;
+  }
 }
 
 .contact__information a:hover {
@@ -1110,8 +1044,7 @@ section .test .heading b{
 .footer_section{
   margin-top: 10rem;
   text-align: center;
-  background-color: black;
-  height: 50vh;
+  height: 30vh;
 }
 
 .footer_section .footer__container{
