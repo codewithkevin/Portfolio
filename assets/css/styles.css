@@ -350,7 +350,7 @@ the website, in dark theme
   border-radius: 90px;
 }
 
-@media (max-width:756px){
+@media (max-width:766px){
   .home__img {
     display: none;
   }
