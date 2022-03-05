@@ -350,6 +350,12 @@ the website, in dark theme
   border-radius: 90px;
 }
 
+@media (max-width:756px){
+  .home__img {
+    display: none;
+  }
+}
+
 .home__container .home__data{
   cursor: default;
 }
