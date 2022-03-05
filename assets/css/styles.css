@@ -590,7 +590,6 @@ the website, in dark theme
   cursor: pointer;
 }
 
-
 .about__data button{
   justify-content: space-evenly;
   padding: 10px 10px 5px 10px;
@@ -634,7 +633,6 @@ the website, in dark theme
 
     .cv {
       display: inline;
-      margin-bottom: 30px;
     }
 
 }
@@ -691,6 +689,9 @@ the website, in dark theme
 
 
 @media (max-width: 768px){
+  .fact{
+    margin-top: 140px;
+  }
   .fact .section-title{
     margin-top: 70px;
   }
