@@ -637,6 +637,7 @@ the website, in dark theme
 
     .cv {
       display: inline;
+      margin-bottom: 30px;
     }
 
 }
