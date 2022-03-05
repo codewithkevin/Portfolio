@@ -456,7 +456,7 @@ the website, in dark theme
 }
 
 .twitter {
-  color: dodgerblue;
+  color: green;
 }
 
 /*End */
@@ -477,6 +477,9 @@ the website, in dark theme
 }
 
 @media (max-width: 768px){
+  .home .home__img {
+    display: none;
+  }
   .home {
     background-image: url("/assets/img/images/bg.gif");
     background-position: center;
@@ -587,6 +590,10 @@ the website, in dark theme
   cursor: pointer;
 }
 
+.about__data p:hover{
+  font-size: 20px;
+}
+
 .about__data button{
   justify-content: space-evenly;
   padding: 10px 10px 5px 10px;
@@ -628,7 +635,7 @@ the website, in dark theme
       display: none;
     }
 
-    .cv {
+    .cv{
       display: inline;
     }
 
@@ -639,12 +646,6 @@ the website, in dark theme
 .fact .section-title{
     text-align: center;
     margin-bottom: 60px;
-}
-
-@media screen and (min-width: 375){
-  .fact {
-    margin-top: 200px;
-  }
 }
 
 .fact .section-title h2{
@@ -710,7 +711,11 @@ the website, in dark theme
   
 }
 
-
+@media  (min-width: 356px) {
+  .fact{
+    display: none;
+  }
+}
 
 /*========= End =============*/
 
