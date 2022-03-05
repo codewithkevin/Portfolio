@@ -350,11 +350,6 @@ the website, in dark theme
   border-radius: 90px;
 }
 
-@media (max-width:766px){
-  .home__img {
-    display: none;
-  }
-}
 
 .home__container .home__data{
   cursor: default;
@@ -638,6 +633,10 @@ the website, in dark theme
 
     .section-nav {
       display: none;
+    }
+
+    .cv {
+      display: inline;
     }
 
 }
