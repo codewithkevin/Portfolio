@@ -605,6 +605,11 @@ the website, in dark theme
   transition:all 1s ease-in-out;
   box-shadow: 17px 17px 17px -2px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.about__data .cv_inhead {
+  display: none;
 }
 
 .section-nav {
@@ -711,11 +716,11 @@ the website, in dark theme
   
 }
 
-@media  (min-width: 356px) {
+@media  (max-width: 356px) {
   .fact{
     display: none;
   }
-  .cv_inhead {
+  .about__data .cv_inhead {
     display: inline;
   }
 }
