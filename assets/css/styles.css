@@ -590,9 +590,6 @@ the website, in dark theme
   cursor: pointer;
 }
 
-.about__data p:hover{
-  font-size: 20px;
-}
 
 .about__data button{
   justify-content: space-evenly;
