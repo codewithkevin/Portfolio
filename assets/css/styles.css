@@ -715,6 +715,9 @@ the website, in dark theme
   .fact{
     display: none;
   }
+  .cv_inhead {
+    display: inline;
+  }
 }
 
 /*========= End =============*/
