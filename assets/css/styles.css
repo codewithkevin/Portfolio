@@ -456,7 +456,7 @@ the website, in dark theme
 }
 
 .twitter {
-  color: green;
+  color: dodgerblue;
 }
 
 /*End */
@@ -477,9 +477,6 @@ the website, in dark theme
 }
 
 @media (max-width: 768px){
-  .home .home__img {
-    display: none;
-  }
   .home {
     background-image: url("/assets/img/images/bg.gif");
     background-position: center;
@@ -642,6 +639,12 @@ the website, in dark theme
 .fact .section-title{
     text-align: center;
     margin-bottom: 60px;
+}
+
+@media screen and (min-width: 375){
+  .fact {
+    margin-top: 200px;
+  }
 }
 
 .fact .section-title h2{
